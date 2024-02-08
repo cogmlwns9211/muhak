@@ -107,7 +107,6 @@ passport.deserializeUser(User.deserializeUser());
 router.use((req, res, next) => {
   res.locals.loggedIn = req.isAuthenticated();
   res.locals.currentUser = req.user;
-  console.log(res.locals.currentUser);
   next();
 });
 
