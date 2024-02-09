@@ -298,7 +298,15 @@ footer p{
   padding-bottom: 1rem;
 }
 
+.nav-item{
+  position: relative;
+}
+
 .submenu{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 1; 
   height: 0;
   padding: 0;
   overflow: hidden;
@@ -330,3 +338,7 @@ footer p{
   height: 100%;
 }
 
+
+#about_float div{
+  float: left;
+}
