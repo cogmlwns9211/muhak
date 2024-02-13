@@ -300,6 +300,11 @@ footer p{
 
 .nav-item{
   position: relative;
+  width:170px;
+}
+
+.nav-item a{
+  text-align: center;
 }
 
 .submenu{
@@ -325,7 +330,7 @@ footer p{
 }
 
 .drop li:hover .submenu{
-  height: 62px;
+  height: 93px;
   transition-duration: 1s;
 }
 
