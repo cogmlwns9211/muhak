@@ -343,7 +343,10 @@ footer p{
   height: 100%;
 }
 
-
 #about_float div{
   float: left;
+}
+
+.usernew{
+  height: 100%;
 }
