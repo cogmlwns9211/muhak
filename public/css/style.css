@@ -43,17 +43,9 @@ span.ut-red {
 
 #index {
   background: url(../img/muhak2.jpg)
-  no-repeat center center fixed;
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 100%;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
+  no-repeat center center;
+  background-size: cover;
+  padding-bottom: 56%;
 }
 
 header {
@@ -106,7 +98,6 @@ nav .menu-item,
   /* Aaron */
   font-size: 16px;
   padding: 8px 10px;
-  float: left;
   line-height: 1;
   cursor: pointer; /* Aaron */
   color: #ab3135;
@@ -115,9 +106,9 @@ nav .menu-item,
 .menu-item:focus,
 .menu-item:hover,
 .menu-item.active,
-.menu-item.nav-link:focus,
-.menu-item.nav-link:hover,
-.menu-item.nav-link.active {
+.menu-item.drop-link:focus,
+.menu-item.drop-link:hover,
+.menu-item.drop-link.active {
   color: #9a2d2e;
 }
 
@@ -162,6 +153,12 @@ nav a {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+}
+
+main .cover-box-2 {
+  position: absolute;
+  top: 60%;
+  left: 49%;
 }
 
 .cover-box-2 {
@@ -294,4 +291,62 @@ td {
 
 .img-404 img {
   max-height: 50vh;
+}
+
+footer p{
+  padding-top:1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-item{
+  position: relative;
+  width:170px;
+}
+
+.nav-item a{
+  text-align: center;
+}
+
+.submenu{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 1; 
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.submenu li{
+  background-color:white;
+  display: block;
+  text-align: center;
+  line-height: 31px;
+}
+
+.drop li:hover{
+  /* color:white; */
+  transition-duration: 0.5s;
+}
+
+.drop li:hover .submenu{
+  height: 93px;
+  transition-duration: 1s;
+}
+
+.submenu li:hover{
+  background-color: #e7a4a6;
+}
+
+#about{
+  margin-top: 2%;
+  height: 100%;
+}
+
+#about_float div{
+  float: left;
+}
+
+.usernew{
+  height: 100%;
 }

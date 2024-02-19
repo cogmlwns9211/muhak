@@ -18,6 +18,30 @@ module.exports = {
       title: "About",
     });
   },
+  showAddress: (req, res) => {
+    res.render("_pages/address", {
+      page: "address",
+      title: "address",
+    });
+  },
+  showDrinkOneTime: (req, res) => {
+    res.render("_pages/drinkonetime", {
+      page: "drinkonetime",
+      title: "drinkonetime",
+    });
+  },
+  showGame: (req, res) => {
+    res.render("_pages/game", {
+      page: "game",
+      title: "game",
+    });
+  },
+  showOneDayClass: (req, res) => {
+    res.render("_pages/onedayclass", {
+      page: "onedayclass",
+      title: "onedayclass",
+    });
+  },
   showTransportation: (req, res) => {
     res.render("_pages/transportation", {
       page: "transportation",
